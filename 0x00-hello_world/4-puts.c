@@ -1,9 +1,12 @@
 #include <stdio.h>
 
 /**
-*print the statement
-*do not use printf
-*/
+ * main - start
+ *
+ * return(0) -if successful
+ *
+ */
+
 int main(void)
 {
 	puts("\"Programming is like building a multilingual puzzle");
