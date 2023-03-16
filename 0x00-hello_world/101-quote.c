@@ -7,7 +7,9 @@
  */
 int main(void)
 {
-	write(2, "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n", 61);
+	const char message[]="and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
+	ssize_t len = sizeof(message) - 1;
+	write(2,message , len);
 
 	return (1);
 }
