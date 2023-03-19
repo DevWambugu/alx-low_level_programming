@@ -1,4 +1,4 @@
-#include <stdio.h>
+i#include <stdio.h>
 
 /**
 *main - print all possible different combinations of two digits
@@ -16,9 +16,9 @@ int main(void)
 		{
 		putchar(j + '0');
 		putchar(k + '0');
-		if (j != 8 || k != 9)
-			putchar(',');
-			putchar(' ');
+			if (j != 8 || k != 9)
+				putchar(',');
+				putchar(' ');
 		}
 	}
 	return (0);
