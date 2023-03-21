@@ -3,3 +3,4 @@
 2.Write a function that prints 10 times the alphabet, in lowercase, followed by a new line.
 Write a function that checks for lowercase character.
 5. Write a function that prints the sign of a number.
+6. Write a function that computes the absolute value of an integer.
