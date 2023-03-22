@@ -13,9 +13,9 @@ int main(void)
 	int k = 2;
 	int i;
 
-	printf("%d, %d", j, k);
+	printf("%d, %d, ", j, k);
 
-	for (i = 3; i < 51; i++)
+	for (i = 1; i < 51; i++)
 	{
 		fib = (j + k);
 		printf("%lu", fib);
