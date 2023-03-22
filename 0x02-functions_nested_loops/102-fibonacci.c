@@ -9,11 +9,11 @@
 int main(void)
 {
 	unsigned long fib;
-	int j = 1;
-	int k = 2;
-	int i;
+	unsigned long j = 1;
+	unsigned long k = 2;
+	unsigned long i;
 
-	printf("%d, %d, ", j, k);
+	printf("%lu, %lu, ", j, k);
 
 	for (i = 1; i < 51; i++)
 	{
