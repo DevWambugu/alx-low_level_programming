@@ -18,6 +18,7 @@ int main(void)
 	for (i = 3; i < 51; i++)
 	{
 		fib = (j + k);
+		printf("%lu", fib);
 		k = j;
 		j = fib;
 		if (i < 50)
