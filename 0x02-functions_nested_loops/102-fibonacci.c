@@ -19,8 +19,8 @@ int main(void)
 	{
 		fib = (j + k);
 		printf("%lu", fib);
-		k = j;
-		j = fib;
+		j = k;
+		k = fib;
 		if (i < 50)
 			printf(", ");
 	}
