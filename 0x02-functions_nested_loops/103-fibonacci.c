@@ -20,8 +20,10 @@ int main(void)
 		j = k;
 		k = fib;
 		if (fib % 2 == 0)
+		{
 			sum = (sum + fib);
 			printf("%lu", sum);
+		}
 	}
 return (0);
 }
