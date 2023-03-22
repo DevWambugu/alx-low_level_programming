@@ -13,7 +13,6 @@ int main(void)
 	unsigned long k =  2;
 	unsigned long sum = 3;
 
-	printf("%lu, %lu", j, k);
 	while (fib <= 4000000)
 	{
 		fib = (j + k);
@@ -22,6 +21,7 @@ int main(void)
 		k = fib;
 		if (fib % 2 == 0)
 			sum = (sum + fib);
+			printf("%lu", sum);
 	}
 return (0);
 }
