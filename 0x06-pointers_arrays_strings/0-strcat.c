@@ -13,18 +13,18 @@ char *_strcat(char *dest, char *src)
 	int length = 0;
 	int j = 0;
 	*dest = dest[length];
-	*src = src [j];
+	*src = src[j];
 
-	while (dest[length] != '\0') 
+	while (dest[length] != '\0')
 	{
 		dest++;
 	}
 	/*concatenate src to dest*/
-	for (j = 0; src[j] != '\0'; ++j, ++length) 
+	for (j = 0; src[j] != '\0'; ++j, ++length)
 	{
 		dest[length] = src[j];
-  	}
+	}
 	/* terminating the s1 string*/
 	dest[length] = '\0';
-	return(0);
+	return (dest);
 }
