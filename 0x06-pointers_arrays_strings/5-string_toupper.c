@@ -7,7 +7,7 @@
 *
 *Return: str
 */
-char *string_toupper(char *)
+char *string_toupper(char *str)
 {
 	int length = 0;
 
@@ -20,3 +20,4 @@ char *string_toupper(char *)
 	}
 
 	return (str);
+}
