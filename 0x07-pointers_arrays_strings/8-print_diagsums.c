@@ -19,11 +19,11 @@ void print_diagsums(int *a, int size)
 		sumtotal1 += a[j];
 		a += size;
 	}
-	a -=size;
+	a -= size;
 	for (j = 0; j < size; j++)
 	{
 		sumtotal2 += a[j];
 		a -= size;
 	}
-	printf ("%d, %d\n", sumtotal1, sumtotal2);
+	printf("%d, %d\n", sumtotal1, sumtotal2);
 }
