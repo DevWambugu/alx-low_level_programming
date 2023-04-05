@@ -9,7 +9,7 @@
 int _sqrt_recursion(int n)
 {
 	double E = (n / 2);
-	int SE;
+	double SE;
 	int rtn;
 	int N = n;
 
