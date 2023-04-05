@@ -31,7 +31,7 @@ int _sqrt_recursion(int n)
 		 _sqrt_recursion(SE);
 		E = SE;
 		N = n;
-		if ((SE - E) <= 0.01)
+		if ((SE - E) <= 0.001)
 		{
 			rtn = SE;
 		}
