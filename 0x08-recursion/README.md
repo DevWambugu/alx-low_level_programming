@@ -6,3 +6,4 @@
 6. Write a function that returns 1 if the input integer is a prime number, otherwise return 0
 7. Write a function that returns 1 if a string is a palindrome and 0 if not.
 5. Write a function that returns the natural square root of a number.
+8. Write a function that compares two strings and returns 1 if the strings can be considered identical, otherwise return 0

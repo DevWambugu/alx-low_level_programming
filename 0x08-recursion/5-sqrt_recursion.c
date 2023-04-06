@@ -8,7 +8,7 @@
 */
 int _sqrt_recursion(int n)
 {
-	double E = (n / 2);
+	double E = (n / 2.0);
 	double SE;
 	int rtn;
 	int N = n;
@@ -27,13 +27,16 @@ int _sqrt_recursion(int n)
 	}
 	else
 	{
-		SE = (E + (N / E)) / 2;
-		 _sqrt_recursion(SE);
+		SE = (E + (N / E)) / 2.0;
 		E = SE;
 		N = n;
-		if ((SE - E) <= 0.001)
+		if ((SE - E) <= 0.0000001)
 		{
 			rtn = SE;
+		}
+		else 
+		{
+			_sqrt_recursion(SE);
 		}
 	}
 	return (rtn);
