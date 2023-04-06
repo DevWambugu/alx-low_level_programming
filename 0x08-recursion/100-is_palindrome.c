@@ -9,12 +9,11 @@
 int is_palindrome(char *s)
 {
 	int rtn;
-	int n;
-
+	
 	if (*s != '\0')
 	{
-		n = is_palindrome(s + 1);
-		if (*s == n)
+		is_palindrome(s + 1);
+		if (*s)
 		{
 			rtn = 1;
 		}
