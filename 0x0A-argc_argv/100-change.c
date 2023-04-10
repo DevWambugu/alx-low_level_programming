@@ -13,7 +13,8 @@ int main(int argc, char *argv[])
 {
 	int amount = atoi(argv[1]);
 	int denominations[] = {25, 10, 5, 2, 1};
-	int coins, coins0, coins1 = 0;
+	int coins1,coins3 = 0;
+	int coins2 = 0;
 	int rem_amount = amount;
 	int i = 0;
 
@@ -28,22 +29,17 @@ int main(int argc, char *argv[])
 		{
 			if ((rem_amount % denominations[i]) == 0)
 			{
-				coins0 = (rem_amount / denominations[i]);
+				coins2 = (rem_amount / denominations[i]);
 				break;
 			}
-			else if ((rem_amount % denominations[i]) != 0)
+			else if ((rem_amount > denominations[i]) != 0)
 			{
-				do 
-				{
-					coins1 = (rem_amount / denominations[i]);
-					rem_amount = (rem_amount % denominations[i]);
-					coins1 += coins1;
-				}
-				while ((rem_amount / denominations[i]) != 0);
+				coins1 = (rem_amount / denominations[i]);
+				coins3 += coins1;
+				rem_amount = (rem_amount - (coins1 * denominations[i]));
 			}
 		}
-		coins = (coins0 + coins1);
-		printf("%d\n", coins);
+		printf("%d\n", (coins2 + coins3));
 	}
 	return (0);
 }
