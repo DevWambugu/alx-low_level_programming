@@ -13,7 +13,7 @@ int main(int argc, char *argv[])
 {
 	int amount = atoi(argv[1]);
 	int denominations[] = {25, 10, 5, 2, 1};
-	int coins1,coins3 = 0;
+	int coins1, coins3 = 0;
 	int coins2 = 0;
 	int rem_amount = amount;
 	int i = 0;
