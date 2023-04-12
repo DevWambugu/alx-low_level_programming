@@ -4,7 +4,7 @@
 /**
 *free_grid - frees a 2 dimensional grid
 *@height: height of the grid
-*@**grid: grid array
+*@grid: a pointer to grid
 *
 *Return: returns nothing
 */
