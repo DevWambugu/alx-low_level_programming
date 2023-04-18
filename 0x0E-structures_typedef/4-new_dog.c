@@ -16,10 +16,10 @@ dog_t *new_dog(char *name, float age, char *owner)
 	int i = 0;
 	int j = 0;
 	int owner_len = 0;
-	dog_t *new_dog_pointer;
+	dog_t *new_dog_p;
 
-	new_dog_pointer = malloc(sizeof(dog_t));
-	if (new_dog_pointer == NULL)
+	new_dog_p = malloc(sizeof(dog_t));
+	if (new_dog_p == NULL)
 	{
 		return (NULL);
 	}
@@ -31,24 +31,24 @@ dog_t *new_dog(char *name, float age, char *owner)
 	{
 		owner_len++;
 	}
-	new_dog_pointer->name = malloc(name_length * sizeof(new_dog_pointer->name));
-	if (new_dog_pointer == NULL)
+	new_dog_p->name = malloc((name_length + 1) * sizeof(new_dog_p->name));
+	if (new_dog_p->name == NULL)
 	{
 		return (NULL);
 	}
 	for (i = 0; i < name_length; i++)
 	{
-		(new_dog_pointer->name)[i] = name[i];
+		(new_dog_p->name)[i] = name[i];
 	}
-	new_dog_pointer->age = age;
-	new_dog_pointer->owner = malloc(owner_len * sizeof(new_dog_pointer->owner));
-	if (new_dog_pointer == NULL)
+	new_dog_p->age = age;
+	new_dog_p->owner = malloc((owner_len + 1) * sizeof(new_dog_p->owner));
+	if (new_dog_p->owner == NULL)
 	{
 		return (NULL);
 	}
 	for (i = 0; i < owner_len; i++)
 	{
-		new_dog_pointer->owner[i] = owner[i];
+		new_dog_p->owner[i] = owner[i];
 	}
-	return (new_dog_pointer);
+	return (new_dog_p);
 }
