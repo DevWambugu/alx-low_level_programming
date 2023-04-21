@@ -3,7 +3,7 @@
 #include <stdarg.h>
 
 /**
-*@p_character - prints the charcters
+*p_character - prints the charcters
 *@c: character to be printed
 */
 void p_character(va_list c)
