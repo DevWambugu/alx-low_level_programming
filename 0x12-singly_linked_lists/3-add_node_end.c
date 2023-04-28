@@ -5,6 +5,20 @@
 #include <string.h>
 
 /**
+*_strlen - return length of the string
+*@s: string
+*
+*Return: length of sring
+*/
+int _strlen(const char *s)
+{
+	int i;
+
+	for (i = 0; s[i]; i++)
+		;
+	return (i);
+}
+/**
 *add_node_end - ads a new node at the end of the list
 *@str: string to be duplicated
 *@head: pointer to node
@@ -34,7 +48,7 @@ list_t *add_node_end(list_t **head, const char *str)
 		return (NULL);
 	}
 	n_node->str = new_string;
-	n_node->len = strlen(new_string);
+	n_node->len = _strlen(new_string);
 	n_node->next = NULL;
 	if (*head == NULL)
 	{
