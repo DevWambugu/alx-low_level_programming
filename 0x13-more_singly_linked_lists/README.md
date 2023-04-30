@@ -6,3 +6,4 @@
 5. Write a function that frees a listint_t list.
 6. Write a function that deletes the head node of a listint_t linked list, and returns the head node’s data (n).
 7. Write a function that returns the nth node of a listint_t linked list.
+8. Write a function that returns the sum of all the data (n) of a listint_t linked list.
