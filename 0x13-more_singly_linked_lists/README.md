@@ -13,3 +13,4 @@
 14. Write a function that finds the loop in a linked list.
 12. Write a function that prints a listint_t linked list.
 13. Write a function that frees a listint_t list.
+11. Write a function that reverses a listint_t linked list

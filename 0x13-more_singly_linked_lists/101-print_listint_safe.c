@@ -14,8 +14,9 @@ size_t print_listint_safe(const listint_t *head)
 	size_t counter = 0;
 	const listint_t *present_node;
 	listint_t *previous_node;
+	int detect_error = 0;
 
-	for (; head != NULL; head = head->next)
+	for (; head != NULL && !detect_error; head = head->next)
 	{
 		printf("[%p] %d\n", (void *)head, head->n);
 		counter++;
