@@ -169,5 +169,7 @@ int main(int argc, char *argv[])
 			break;
 		}
 	}
+	printf("Entry point address: 0x%lx\n", (unsigned long)elf_header.e_entry);
+	close(file_descriptor);
 	return (0);
 }
