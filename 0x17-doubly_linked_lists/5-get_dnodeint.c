@@ -3,7 +3,7 @@
 #include <stdio.h>
 #include "lists.h"
 
-/*
+/**
 *get_dnodeint_at_index - returns the nth node of a dlistint_t linked list
 *@head: pointeer to the head node
 *@index: unsigned integer whose node is to be identified
