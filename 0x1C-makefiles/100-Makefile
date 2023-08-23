@@ -1,0 +1,36 @@
+# This makefile builds the school executable
+# # compiler
+CC = gcc
+
+# Add compiler flags
+CFLAGS = -Wall -Werror -Wextra -pedantic
+
+# Source files
+SRC = main.c school.c
+
+# Object files
+OBJ = $(SRC:.C=.o)
+
+# Executable name
+NAME = school
+
+# Build the executable
+all: m.h $(OBJ)
+	$(CC) $(OBJ) -o $(NAME)
+
+# Rule to delete temporary files and the executable
+clean:
+	$(RM) *~ $(NAME)
+
+# RULE TO DELETE ALL OBJECT FILES
+oclean:
+	$(RM) $(OBJ)
+
+# Delete the executable, temporary files, and the object files
+fclean: clean oclean
+
+# Force the recompilation of all source files
+re: fclean all
+
+# Ensure the rules never fail
+.PHONY: all clean oclean fclean re
