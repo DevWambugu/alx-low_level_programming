@@ -1,0 +1,15 @@
+#This is a makefile for making the school executable
+# Define compiler
+CC = gcc
+# define the source files
+SRC = main.c school.c
+#Define object files
+OBJS = $(SRC:.c=.o)
+#Executable name
+EXEC = school
+#Build the executable
+all: $(OBJS)
+	$(CC) $(OBJS) -o $(EXEC)
+#Compile each source file to an object
+%.o: %.c
+	$(CC) -c $< -o $@
