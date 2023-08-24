@@ -18,6 +18,10 @@ RM = rm -f
 all: $(OBJ)
 	$(CC) $(OBJ) -o $(NAME)
 
+#compile the source files to object files
+%.o: %.c
+	$(CC) -c $< -o $@ -MMD -MP
+
 # Rule to delete temporary files and the executable
 clean:
 	$(RM) *~ $(NAME)
